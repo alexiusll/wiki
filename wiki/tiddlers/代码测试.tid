@@ -1,0 +1,25 @@
+created: 20220214161200467
+modified: 20220214161513966
+tags: 学习
+title: 代码测试
+type: text/vnd.tiddlywiki
+
+这是一段测试用的代码
+
+```JSON
+{
+  "name": "wiki",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alexiusll/wiki.git",
+  "author": "linkenzone <linkenzone@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tiddlywiki": "^5.2.1"
+  },
+  "scripts": {
+    "build": "tiddlywiki wiki --build index",
+    "start": "tiddlywiki wiki --listen"
+  }
+}
+```

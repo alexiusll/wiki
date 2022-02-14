@@ -3,7 +3,10 @@
     "plugins": [
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/filesystem",
-        "tiddlywiki/highlight"
+        "tiddlywiki/highlight",
+        "tiddlywiki/KaTeX",
+        "tiddlywiki/Markdown",
+        "tiddlywiki/CodeMirror"
     ],
     "themes": [
         "tiddlywiki/vanilla",
