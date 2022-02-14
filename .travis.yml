@@ -1,21 +1,23 @@
 language: node_js
 node_js:
-  - "11"
+  - 14
 dist: trusty
 sudo: false
+install:
+  - yarn
 
 branches:
   only:
   - main
 
-install:
-  - git clone –depth 1 https://github.com/Jermolene/TiddlyWiki5.git
-  - cd TiddlyWiki5
-  - npm link
-  - cd ..
+# install:
+#   - git clone –depth 1 https://github.com/Jermolene/TiddlyWiki5.git
+#   - cd TiddlyWiki5
+#   - npm link
+#   - cd ..
 
 script:
-  - tiddlywiki –verbose –build index
+  - yarn build
 
 deploy:
   provider: pages
